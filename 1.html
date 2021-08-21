@@ -1,0 +1,139 @@
+<!--注释的形式-->
+<!DOCTYPE html>          <!--页面文档类型-->
+<html>                   <!--开始标签-->
+     <head>              <!--在head中写的内容不会显示在浏览器窗口中-->
+          <meta charset="utf-8">
+          <title>蒲昊苒的不开心</title>
+         <style>
+             h1{
+                color:green;
+                font-size:80px;
+                font-family:楷体;
+             }
+             p{
+               font-size:40px;
+               color:red;
+             }
+             p:first-letter{
+                font-size:20px;
+                color:blue;
+             }
+             .a{
+                 color:purple;
+             }
+             .b{
+                 color:black;
+             }
+             a{
+                 color:red;
+                 text-decoration:none;
+             }
+             a:hover{
+                 color:green;
+             }
+         </style>
+     </head>
+     <body>
+          <a name="shit"></a>         <!--锚点-->
+
+              <a href="#shit2">去底部</a>
+
+          <hr>            <!--分割线标签-->
+          <h1>蒲昊苒</h1>  <!--一级标题（字会很大）-->
+          <hr>
+          <h2>蒲昊苒喜欢的网站</h2>
+          <ul>
+              <!--网页链接-->
+              <!--锚点链接-->
+              <!--功能链接-->
+              <!--a-anchor-->
+              <li><a href="https://www.baidu.com" target="_blank">百度</a></li>   <!--如果没有target="_blank"则打开的网页是显示在元网页上的-->
+              <li><a href="https://www.jd.com/?cu=true&utm_source=baidu-pinzhuan&utm_medium=cpc&utm_campaign=t_288551095_baidupinzhuan&utm_term=0f3d30c8dba7459bb52f2eb5eba8ac7d_0_b033c80cf7b24c488d5bebad27cf0ddb">京东</a></li>
+              <li>视频网站</li>
+                    <ul>
+                        <li><a href="2.html" target="_blank">爱奇艺</a></li>
+                        <li>腾讯</li>
+                    </ul>
+          </ul>
+          <hr>
+          <h2>蒲昊苒喜欢吃的东西和喜欢做的事</h2>
+          <ol>       <!--有序列表-->
+              <li >西瓜</li>
+              <li>柚子</li>
+          </ol>
+          <ul>       <!--无序列表-->
+              <li>吃饭</li>
+              <li>睡觉</li>
+          </ul>
+          <dl>
+              <dt><img src="lgz.jpg" height="400" width="400"></dt>
+              <dt>python：<img src="https://www.python.org/static/img/python-logo.png"></dt>
+
+              <dd>面向对象的编程语言</dd>
+              <dd>动态弱类型语言，需要Python解释器才能执行</dd>
+          </dl>
+          <p class="a">床&nbsp;&nbsp;前<del>明月光</del><sup>1</sup></p>      <!--<p>是断路标签：换行，但是行与行之间有间隙-->
+          <p class="b"><ins>疑似</ins>地下霜&copy;</p>
+          <p>举头&trade;望<strong>明月</strong><sup>2</sup></p>
+          <p>低头<em>思</em>故乡</p>
+          <h1>李白</h1>
+          <button onclick="show_writer()">确认</button>
+          <button onclick="shutdown()">关闭</button>
+          <div>
+              <a href="">回顶部</a>
+              <a href="mailto:276191374@qq.com">联系站长</a>
+          </div>
+          <script>
+              function show_writer(){
+                  for (var i=1;i<=3;i+=1){
+                  window.alert('作者：李白');
+                  }
+              }
+          </script>
+          <script>
+              function shutdown(){
+                  if(window.confirm('确定要关闭吗？')){
+                  window.close()
+                  }
+              }
+          </script>
+          <a name="shit2"></a>       <!--锚点-->
+     </body>
+</html>                  <!--结束标签-->
+
+
+<!--<br>换行标签-->
+
+<!--文本标签：
+h1-h6:标题
+hr：水平标尺（水平线）
+p:段落
+sub/sup-上标/下标
+em/strong-粗体/斜体
+del/ins-删除线/下划线
+br-折行
+div换行
+-->
+
+<!--
+字符实体/实体替换字符
+&nbsp;-空格
+&lt;&gt;-尖括号
+
+-->
+
+<!--列表标签(可以嵌套)
+有序列表和无序列表
+有序：带有序号-ol
+无序-ul
+li-列表项目
+定义列表-dl
+dt-定义标题
+dd-定义描述
+-->
+
+<!--
+上述中注意区分.a和a:
+.a是类a（class="a"）
+a是标签a。<a>
+-->
